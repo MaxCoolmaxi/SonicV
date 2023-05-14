@@ -1,0 +1,297 @@
+-- Gui to Lua
+
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+
+local OpenButton = Instance.new("TextButton")
+
+local UICorner = Instance.new("UICorner")
+
+local Frame = Instance.new("Frame")
+
+local RunScript = Instance.new("ImageButton")
+
+local UICorner_2 = Instance.new("UICorner")
+
+local Clear = Instance.new("ImageButton")
+
+local UICorner_3 = Instance.new("UICorner")
+
+local speed = Instance.new("TextBox")
+
+local UICorner_4 = Instance.new("UICorner")
+
+local ImageButton = Instance.new("ImageButton")
+
+local UICorner_5 = Instance.new("UICorner")
+
+local TextBox = Instance.new("TextBox")
+
+local UICorner_6 = Instance.new("UICorner")
+
+local minimize = Instance.new("ImageButton")
+
+local UICorner_7 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+OpenButton.Name = "OpenButton"
+
+OpenButton.Parent = ScreenGui
+
+OpenButton.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+
+OpenButton.Position = UDim2.new(0.0123184528, 0, 0.0163164642, 0)
+
+OpenButton.Size = UDim2.new(0.15307343, 0, 0.114060476, 0)
+
+OpenButton.Font = Enum.Font.Unknown
+
+OpenButton.Text = "Sonic"
+
+OpenButton.TextColor3 = Color3.fromRGB(0, 105, 157)
+
+OpenButton.TextSize = 14.000
+
+UICorner.Parent = OpenButton
+
+Frame.Parent = ScreenGui
+
+Frame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+
+Frame.Position = UDim2.new(0.180686414, 0, -0.416570663, 0)
+
+Frame.Size = UDim2.new(0, 999, 0, 949)
+
+RunScript.Name = "RunScript"
+
+RunScript.Parent = Frame
+
+RunScript.BackgroundColor3 = Color3.fromRGB(1, 101, 189)
+
+RunScript.Position = UDim2.new(0.0270270277, 0, 0.384002149, 0)
+
+RunScript.Size = UDim2.new(0, 70, 0, 75)
+
+RunScript.Image = "rbxassetid://157178788"
+
+RunScript.ScaleType = Enum.ScaleType.Fit
+
+UICorner_2.CornerRadius = UDim.new(0, 10)
+
+UICorner_2.Parent = RunScript
+
+Clear.Name = "Clear"
+
+Clear.Parent = Frame
+
+Clear.BackgroundColor3 = Color3.fromRGB(1, 101, 189)
+
+Clear.Position = UDim2.new(0.116116114, 0, 0.384002149, 0)
+
+Clear.Size = UDim2.new(0, 68, 0, 75)
+
+Clear.Image = "rbxassetid://6433009746"
+
+Clear.ScaleType = Enum.ScaleType.Fit
+
+UICorner_3.CornerRadius = UDim.new(0, 10)
+
+UICorner_3.Parent = Clear
+
+speed.Name = "speed"
+
+speed.Parent = Frame
+
+speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+speed.Position = UDim2.new(0.211211205, 0, 0.396396399, 0)
+
+speed.Size = UDim2.new(0, 139, 0, 50)
+
+speed.Font = Enum.Font.FredokaOne
+
+speed.PlaceholderColor3 = Color3.fromRGB(85, 85, 255)
+
+speed.PlaceholderText = "...speed"
+
+speed.Text = ""
+
+speed.TextColor3 = Color3.fromRGB(0, 123, 200)
+
+speed.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0, 15)
+
+UICorner_4.Parent = speed
+
+ImageButton.Parent = speed
+
+ImageButton.BackgroundColor3 = Color3.fromRGB(22, 39, 56)
+
+ImageButton.Position = UDim2.new(0.815761566, 0, 0, 0)
+
+ImageButton.Size = UDim2.new(0, 47, 0, 50)
+
+ImageButton.Image = "rbxassetid://1114349711"
+
+UICorner_5.Parent = ImageButton
+
+TextBox.Parent = Frame
+
+TextBox.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+
+TextBox.BorderColor3 = Color3.fromRGB(5, 103, 149)
+
+TextBox.Position = UDim2.new(0.0270270258, 0, 0.142102748, 0)
+
+TextBox.Size = UDim2.new(0, 642, 0, 221)
+
+TextBox.ZIndex = 0
+
+TextBox.ClearTextOnFocus = false
+
+TextBox.Font = Enum.Font.SourceSansBold
+
+TextBox.MultiLine = true
+
+TextBox.ShowNativeInput = false
+
+TextBox.Text = "print(\"Welcome SonicUser! contact @kazuka max if you have problem!\")"
+
+TextBox.TextColor3 = Color3.fromRGB(0, 138, 213)
+
+TextBox.TextSize = 13.000
+
+TextBox.TextStrokeTransparency = 9999999442119689768320106496.000
+
+TextBox.TextWrapped = true
+
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_6.CornerRadius = UDim.new(0, 15)
+
+UICorner_6.Parent = TextBox
+
+minimize.Name = "minimize"
+
+minimize.Parent = ScreenGui
+
+minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+minimize.Position = UDim2.new(0.064538613, 0, 0.844649196, 0)
+
+minimize.Size = UDim2.new(0, 41, 0, 47)
+
+minimize.Image = "rbxassetid://12644177983"
+
+UICorner_7.Parent = minimize
+
+-- Scripts:
+
+local function TFXR_fake_script() -- OpenButton.LocalScript 
+
+	local script = Instance.new('LocalScript', OpenButton)
+
+	local Frame = script.Parent.Parent.Frame
+
+	
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+		Frame.Visible = true
+
+	end
+
+end
+
+coroutine.wrap(TFXR_fake_script)()
+
+local function YSGCG_fake_script() -- RunScript.LocalScript 
+
+	local script = Instance.new('LocalScript', RunScript)
+
+	local button = script.Parent
+
+	local textbox = script.Parent.Parent.TextBox
+
+	button.MouseButton1Click:Connect(function()
+
+		loadstring(textbox.Text)()
+
+	end)
+
+end
+
+coroutine.wrap(YSGCG_fake_script)()
+
+local function EHUITV_fake_script() -- Clear.LocalScript 
+
+	local script = Instance.new('LocalScript', Clear)
+
+	local button = script.Parent
+
+	local textbox = script.Parent.Parent.TextBox
+
+	button.MouseButton1Click:Connect(function()
+
+		textbox.Text = ""
+
+	end)
+
+end
+
+coroutine.wrap(EHUITV_fake_script)()
+
+local function GZJR_fake_script() -- speed.LocalScript 
+
+	local script = Instance.new('LocalScript', speed)
+
+	wait(2)
+
+	local plr = game.Players.LocalPlayer
+
+	local char = plr.Character
+
+	local hum = char:WaitForChild("Humanoid")
+
+	
+
+	script.Parent.Changed:Connect(function()
+
+		hum.WalkSpeed = script.Parent.Text
+
+	end)
+
+end
+
+coroutine.wrap(GZJR_fake_script)()
+
+local function OYEOIIK_fake_script() -- minimize.LocalScript 
+
+	local script = Instance.new('LocalScript', minimize)
+
+	local Frame = script.Parent.Parent.Frame
+
+	
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+		Frame.Visible = false
+
+	end)
+
+	
+
+end
+
+coroutine.wrap(OYEOIIK_fake_script)()
